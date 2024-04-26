@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    display: grid;
+    place-items: center;
+}
+
+.loaders {
+    display: flex;
+    align-items: center;
+}
+
+.loaders .loader {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    margin: 0 -50px;
+}
+
+.loaders .loader1 {
+    border-bottom: 10px solid #51ff00;
+    animation: animateLoader1 4s linear infinite;
+}
+@keyframes animateLoader1 {
+    to {
+        transform: rotate(360deg);
+    } 
+}
+.loaders .loader1:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #51ff00;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #51ff00,
+    0 0 20px #51ff00,
+    0 0 40px #51ff00,
+    0 0 60px #51ff00,
+    0 0 80px #51ff00,
+    0 0 100px #51ff00,
+    0 0 120px #51ff00,
+    0 0 140px #51ff00,
+    0 0 160px #51ff00,
+    0 0 180px #51ff00,
+    0 0 200px #51ff00,
+    0 0 300px #51ff00,
+    0 0 400px #51ff00,
+    0 0 500px #51ff00;
+}
+
+.loaders .loader2 {
+    border-top: 10px solid #ff00aa;
+    animation: animateLoader2 4s linear infinite;
+}
+@keyframes animateLoader2 {
+    to {
+        transform: rotate(-360deg);
+    } 
+}
+.loaders .loader2:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #ff00aa;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff00aa,
+    0 0 20px #ff00aa,
+    0 0 40px #ff00aa,
+    0 0 60px #ff00aa,
+    0 0 80px #ff00aa,
+    0 0 100px #ff00aa,
+    0 0 120px #ff00aa,
+    0 0 140px #ff00aa,
+    0 0 160px #ff00aa,
+    0 0 180px #ff00aa,
+    0 0 200px #ff00aa,
+    0 0 300px #ff00aa,
+    0 0 400px #ff00aa,
+    0 0 500px #ff00aa;
+}
+
+.text {
+    position: absolute;
+    color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.43em;
+    -webkit-text-stroke: 2px #51ff00;
+    animation: animateText 2s linear infinite;
+}
+@keyframes animateText {
+    0% {
+        -webkit-text-stroke: 2px #51ff00;
+    }
+    100% {
+        -webkit-text-stroke: 2px #ff00aa;
+    }
+} 
