@@ -110,7 +110,7 @@ body {
 
 .text span {
     color: transparent;
-    font-size: 2.5em;
+    font-size: 45px;
     font-weight: 700;
     text-transform: uppercase;
     -webkit-text-stroke: 2px transparent;
@@ -121,11 +121,11 @@ body {
         -webkit-text-stroke: 2px #51ff00;
         translate: 0;
     }
-    90% {
+    92% {
         translate: 0;
     }
     100% {
         -webkit-text-stroke: 2px #ff00aa;
-        translate: 0 -35px;
+        translate: 0 -45px;
     }
 } 
